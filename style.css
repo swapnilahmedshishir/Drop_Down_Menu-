@@ -1,0 +1,98 @@
+:root{
+    --color-primary: #0073ff;
+    --color-white:#e9e9e9;
+    --color-black: #141d28;;
+    --color-black-1: #212b38;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.menu_bar{
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5%; */
+}
+
+.logo{
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu_bar ul li {
+    padding: 10px 29px;
+    position: relative;
+}
+.menu_bar ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.menu_bar ul li a:hover{
+    color: var(--color-primary);
+}
+.dropdown_menu{
+    display: none;
+}
+
+.menu_bar ul li:hover .dropdown_menu{
+ display: block;
+ position: absolute;
+ left:0;
+ top:100%;
+ background-color: var(--color-black);
+}
+
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .dropdown_menu ul li {
+    width: 200px;
+    padding: 10px;
+}
+
+.fas{
+
+    float: right;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+.dropdown_menu_1{
+    display: none;
+}
+
+.dropdown_menu ul li:hover .dropdown_menu_1{
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 127px;
+    background-color: var(--color-black);
+}
+
+
+.hero_section{
+    background-image: url("pexels-kristina-paukshtite-712876.jpg");
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
